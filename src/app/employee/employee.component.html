@@ -1,0 +1,52 @@
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">AttendoSync</a>
+        </div>
+        <div class="menu-toggle" (click)="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-menu" [ngClass]="{'active': menuActive}">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/employee">Employee</a></li>
+            <li><a routerLink="/attendance">Attendance</a></li>
+            <li><a routerLink="/reports">Reports</a></li>
+            <li><a routerLink="/profile">Profile</a></li>
+            <li><a routerLink="/department">Department</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Employee Data</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.contact }}</td>
+                <td>{{ employee.department }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employee.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2024 AttendoSync. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@attendosync.com">support</a></p>
+</footer>

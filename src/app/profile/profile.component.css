@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+    color: #ecf0f1;
+  }
+  
+  header {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #16a085;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  nav {
+    background: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  nav ul li a:hover {
+    background: #16a085;
+    transform: scale(1.05);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .attendance-summary,
+  .attendance-details {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateX(2deg);
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #ecf0f1;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #34495e;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    background: #1e1e1e;
+  }
+  
+  th {
+    background: #34495e;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #2c3e50;
+  }
+  
+  tbody tr:hover {
+    background: #16a085;
+    color: #fff;
+    transform: scale(1.01);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
